@@ -1,0 +1,41 @@
+{
+  "schedule": [
+    {
+      "id": "1",
+      "title": "Parenting Webinar",
+      "date": "2025-05-01",
+      "time": "10:00"
+    },
+    {
+      "id": "2",
+      "title": "Mental Health Session",
+      "date": "2025-05-02",
+      "time": "14:00"
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "title": "Introduction to Parenting",
+      "url": "https://example.com/video1"
+    },
+    {
+      "id": "2",
+      "title": "Child Mental Health Basics",
+      "url": "https://example.com/video2"
+    }
+  ],
+  "services": "We provide webinars, consultation services, and a library of video content for supporting parents and families.\r\n",
+  "family_support": {
+    "support_groups": [
+      {
+        "name": "Single Parents Support",
+        "description": "A group to support single parents with resources and community events."
+      },
+      {
+        "name": "Mental Health Support",
+        "description": "Resources and counseling for families dealing with mental health issues."
+      }
+    ]
+  }
+}

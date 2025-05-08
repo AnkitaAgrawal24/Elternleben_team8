@@ -1,0 +1,12 @@
+{
+  "support_groups": [
+    {
+      "name": "Single Parents Support",
+      "description": "A group to support single parents with resources and community events."
+    },
+    {
+      "name": "Mental Health Support",
+      "description": "Resources and counseling for families dealing with mental health issues."
+    }
+  ]
+}
