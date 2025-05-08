@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const MOCK_API_BASE = "http://127.0.0.1:8000"; // Or move this to `.env`
+const MOCK_API_BASE = "http://127.0.0.1:8000";
 
 // Get list of experts
 export const getExperts = async () => {

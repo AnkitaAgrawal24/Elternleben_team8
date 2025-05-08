@@ -1,5 +1,5 @@
 import { getEmbedding } from "../utils/openai.js";
-import Video from "../models/video.js";
+
 import { cosineSimilarity } from "./similarity.js";
 
 export const searchRelevantVideos = async (query) => {
