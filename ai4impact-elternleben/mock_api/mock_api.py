@@ -404,3 +404,14 @@ def get_expert_webinars(expert_id: str, db: Session = Depends(get_db)):
         }
         for webinar in webinars
     ]
+
+import os
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+       uvicorn.run("mock_api:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000))),
+
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8000))
+    )
