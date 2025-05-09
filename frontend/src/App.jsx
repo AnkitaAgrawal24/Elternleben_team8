@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 
-import "./app.css";
+import "./App.css";
 import ChatbotPage from "./pages/ChatbotPage";
 import Home from "./pages/Home";
 
