@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const MOCK_API_BASE = "http://127.0.0.1:8000";
+const MOCK_API_BASE = "https://ankita-elterleben.onrender.com";
 
 // Get list of experts
 export const getExperts = async () => {
