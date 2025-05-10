@@ -10,7 +10,8 @@ export default function WebinarBookingPage() {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false); // Modal visibility state
 
-  const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+  // const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+  const MOCK_API_URL = import.meta.env.VITE_MOCK_API_URL;
 
   useEffect(() => {
     fetchWebinars();
@@ -18,7 +19,7 @@ export default function WebinarBookingPage() {
 
   const fetchWebinars = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/webinars`);
+      const res = await axios.get(`${MOCK_API_URL}/webinars`);
       setWebinars(res.data);
     } catch (error) {
       console.error("Error fetching webinars:", error);
@@ -38,7 +39,7 @@ export default function WebinarBookingPage() {
       const last_name =
         nameParts.length > 1 ? nameParts.slice(1).join(" ") : null;
       const response = await axios.post(
-        `${BASE_URL}/webinars/${selectedWebinar.uuid}/registrants`,
+        `${MOCK_API_URL}/webinars/${selectedWebinar.uuid}/registrants`,
         {
           email: email,
           first_name: first_name,

@@ -22,7 +22,7 @@ export default function ExpertBookingPage() {
   const fetchExperts = async () => {
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_BACKEND_URL}/experts/available`
+        `${import.meta.env.VITE_MOCK_API_URL}/experts/available`
       );
       console.log("Fetched Experts:", response.data);
       setExperts(response.data);
@@ -35,7 +35,7 @@ export default function ExpertBookingPage() {
     try {
       const response = await axios.get(
         `${
-          import.meta.env.VITE_BACKEND_URL
+          import.meta.env.VITE_MOCK_API_URL
         }/experts/${expertId}/available-slots`
       );
       setSlots(response.data);
@@ -88,7 +88,7 @@ export default function ExpertBookingPage() {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/bookings/new`,
+        `${import.meta.env.VITE_MOCK_API_URL}/bookings/new`,
         {
           expert_id: selectedExpert.uuid,
           start_datetime: selectedSlot,
