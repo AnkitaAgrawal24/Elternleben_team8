@@ -2,6 +2,10 @@ import sqlite3
 import uuid
 from datetime import datetime, timedelta
 import random
+import os
+
+os.makedirs('data', exist_ok=True)
+db_path = os.path.join('data', 'mock_api.db')
 
 # Create database connection
 conn = sqlite3.connect('mock_api.db')

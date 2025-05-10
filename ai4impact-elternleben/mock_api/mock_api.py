@@ -405,7 +405,7 @@ def get_expert_webinars(expert_id: str, db: Session = Depends(get_db)):
         for webinar in webinars
     ]
 
-from create_database import webinar_topics, webinar_agendas, webinar_urls, expert_data, client_names, client_emails, client_phones,services,expert_ids,webinar_ids 
+# from create_database import webinar_topics, webinar_agendas, webinar_urls, expert_data, client_names, client_emails, client_phones,services,expert_ids,webinar_ids 
 
 import os
 
