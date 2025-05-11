@@ -100,7 +100,7 @@ export default function ExpertBookingPage() {
       );
 
       alert(`✅ Termin erfolgreich bei ${selectedExpert.name} gebucht!`);
-      navigate("/chat");
+      navigate("/");
     } catch (error) {
       console.error("Booking failed:", error);
       if (error.response && error.response.data) {

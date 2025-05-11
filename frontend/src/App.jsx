@@ -17,6 +17,7 @@ function App() {
 
           <Route path="/schedule" element={<ExpertBookingPage />} />
           <Route path="/webinars" element={<WebinarBookingPage />} />
+          <Route path="/chat" element={<ChatbotPage />} />
         </Routes>
       </Router>
     </>

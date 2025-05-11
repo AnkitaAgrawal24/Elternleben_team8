@@ -50,6 +50,7 @@ export default function WebinarBookingPage() {
       alert(
         `✅ Erfolgreich für das Webinar "${selectedWebinar.topic}" registriert.`
       );
+
       setShowModal(false); // Close the modal after successful registration
       setSelectedWebinar(null);
       setName("");
